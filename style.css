@@ -2,6 +2,10 @@
       border-bottom: 4px solid #d03434;
   }
   
+  .navbar-default {
+      background: white
+  }
+  
   .scroll {
       font-weight: bolder;
   }
@@ -44,5 +48,3 @@
   .info {
       margin-left: 20px
   }
-  
-
