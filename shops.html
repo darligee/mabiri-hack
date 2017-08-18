@@ -34,8 +34,8 @@
         </div>
         <div class="collapse navbar-collapse" id="navbar-collapset">
             <ul class="nav navbar-nav navbar-center" style="margin-left: 100px">
-                <li><a class="scroll" href="#" style="color:#1f1f1f">Home</a></li>
-                <li><a class="scroll" href="#" style="color:#1f1f1f">NEAR YOU</a></li>
+                <li><a class="scroll" href="index.html" style="color:#1f1f1f">HOME</a></li>
+                <li><a class="scroll" href="nearYou.html" style="color:#1f1f1f">NEAR YOU</a></li>
                 <li class="activate"><a class="scroll" href="#" style="color:#1f1f1f">BIZ/SHOPS</a></li>
                 <li><a class="scroll" href="#" style="color:#1f1f1f">DEALS</a></li>
                 <li><a class="scroll" href="#" style="color:#1f1f1f">ABOUT US</a></li>
@@ -84,6 +84,23 @@
 
     <script src="jquery-3.1.1.js "></script>
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js "></script>
+    <script>
+        $(document).ready(function(){
+            var det = "";
+            $.ajax({
+                type: 'GET',
+                url: 'https://mabiri-new.appspot.com/_ah/api/mabiriApi/v1/getProducts?offset=0&productType=recent',
+                dataType: 'json',
+                contentType: 'application/json; charset=utf-8',
+                success: function(orders){
+                    alert('ok');                    
+                },
+                error: function(){
+                    alert('No bro');
+                }
+            }) ;
+        });
+    </script>
 </body>
 
 </html>
