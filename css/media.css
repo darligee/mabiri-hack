@@ -1,0 +1,43 @@
+
+
+/* Extra Small Devices, Phones */ 
+@media(max-width : 480px) {
+    shopPage_banner_h1{
+        font-size: 20px !important;
+    }
+    iframe{
+        width: 300px !important;
+    }
+}
+
+/* Small Devices, Tablets */
+@media (max-width : 768px) {
+    shopPage_banner_h1{
+        font-size: 35px !important;
+    }
+    .nav li{
+        text-align: center !important;
+        margin: 0 30% !important;
+    }
+    .nav{
+        margin-left: unset !important;
+    }
+    
+    .navbar-owner-btn{
+        margin-right: unset !important;
+    }
+    iframe{
+        width: 400px !important;
+    }
+    
+}
+
+/* Medium Devices, Desktops */
+@media  (min-width : 992px) {
+    
+}
+
+/* Large Devices, Wide Screens */
+@media(min-width : 1200px) {
+
+}
