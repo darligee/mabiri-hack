@@ -10,6 +10,7 @@
     <link href="bootstrap-3.3.7-dist/css/bootstrap.css" type="text/css" rel="stylesheet">
     <link href="font-awesome-4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
+    <link href="css/styler.css" rel="stylesheet" type="text/css">
     <!--<link href="font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" type="text/css" rel="stylesheet">-->
     <style>
         .box{
@@ -21,7 +22,7 @@
 </head>
 
 <body style="background: #fafafa">
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" style="background-color: #fff;">
         <div class="navbar-header">
             <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapset">
                     <span class="icon-bar"></span>
@@ -29,9 +30,9 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-            <a href="#" class="navbar-brand scrollb" style="color:#6d6d6d">Mabiri</a>
+            <a href="#" class="navbar-brand scrollb" style="color:#6d6d6d; margin-top: 15px;">Mabiri</a>
         </div>
-        <div class="collapse navbar-collapse" id="navbar-collapset">
+        <div class="collapse navbar-collapse" id="navbar-collapset" style="padding-top: 15px;">
             <ul class="nav navbar-nav navbar-center" style="margin-left: 100px">
                 <li><a class="scroll" href="#" style="color:#1f1f1f">Home</a></li>
                 <li><a class="scroll" href="#" style="color:#1f1f1f">NEAR YOU</a></li>
@@ -41,13 +42,13 @@
                 <li><a class="scroll" href="#" style="color:#1f1f1f">CONTACT US</a></li>
             </ul>
             <ul class="nav navbar-nav navbar-right" style="margin-top:10px; margin-right: 100px">
-                <li><a href=""><img src="mabiri-icon-pack/cart-red.svg" height="40" width="40" style="margin-top:-20px"><span class="badge" style="background:red">3</span></a></li>
-                <li><button class="btn btn-log right" style="margin-right:20px">LOG IN</button></li>
-                <li><button class="btn btn-md right" style="color: white; background: #d03434;"> OWNER ACCESS</button></li>
+                <li><a href=""><img src="mabiri-icon-pack/cart-red.svg" height="40" width="40" style="margin-top:-20px"><sub class="badge" style="background:red" >3</sub></a></li>
+                <li><button class="btn btn-log right" style="margin-right:20px; font-weight: bold;">LOG IN</button></li>
+                <li><button class="btn btn-md right" style="color: white; background: red;font-weight: bold;"> OWNER ACCESS</button></li>
             </ul>
         </div>
     </nav>
-    <section id="fest" style="margin-top:55px">
+    <section id="fest" style="margin-top:75px">
         <div class="container">
             <ul class="list-inline fest">
                 <li style="background:#f0f0f0; height: 100%; padding:7px"><span class="fa fa-map-marker"></span>Set location to find deals nearby</li>
@@ -56,21 +57,21 @@
         </div>
     </section>
     <div class="container">
-        <div class="row">
-            <div class="col-xs-6">
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-xs-6" style="padding: unset;">
                 <h2><b>Before you pay...</b></h2>
                 <b>Where do you want the item(s) delivered to you?</b>
             </div>
             <div class="col-xs-3 text-right">
-                <a href="" class="btn btn-add" style="color:red; background: none; border: 2px solid red"><b>Add New Address</b></a>
+                <a href="" class="btn btn-add" style="color:red; background: none; border: 2px solid red; border-radius: unset;"><b>Add New Address</b></a>
             </div>
             <div class="col-xs-3"></div>
         </div>
     </div>
-    <section>
+    <section class="col-md-12">
         <div class="container">
-            <div class="row">
-                <div class="col-md-9" style="background: white; margin-top: 20px; padding: 20px; border: 1px solid #d9d9d9"> 
+            <div class="row ">
+                <div class="col-md-9 addressDetails" style="background: white; margin-top: 20px; padding: 20px; border: 1px solid #d9d9d9"> 
                     <div class="row">
                         <div class="col-md-1">
                             <b>1</b>
@@ -87,7 +88,7 @@
                             0809 123 4567
                         </div>
                         <div class="col-md-1">
-                              <button type="button" class="close" data-dismiss="row"><span aria-hidden="true">&times;</span</button>
+                              <button type="button" class="close" data-dismiss="row"><span aria-hidden="true">&times;</span></button>
                         </div>
                     </div>
                 </div>
@@ -96,7 +97,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-9" style="background: white; margin-top: 20px; padding: 20px; border: 1px solid #d9d9d9"> 
+                <div class="col-md-9 addressDetails" style="background: white; margin-top: 20px; padding: 20px; border: 1px solid #d9d9d9"> 
                     <div class="row">
                         <div class="col-md-1">
                             <b>2</b>
@@ -112,7 +113,7 @@
                             0809 123 4567
                         </div>
                         <div class="col-md-1">
-                              <button type="button" class="close" data-dismiss="row"><span aria-hidden="true">&times;</span</button>
+                              <button type="button" class="close" data-dismiss="row"><span aria-hidden="true">&times;</span></button>
                         </div>
                     </div>
                 </div>
@@ -121,7 +122,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-9" style="background: white; margin-top: 20px; padding: 20px; border: 1px solid #d9d9d9"> 
+                <div class="col-md-9 addressDetails" style="background: white; margin-top: 20px; padding: 20px; border: 1px solid #d9d9d9"> 
                     <div class="row">
                         <div class="col-md-1">
                             <b>3</b>
@@ -138,7 +139,7 @@
                             0809 123 4567
                         </div>
                         <div class="col-md-1">
-                              <button type="button" class="close" data-dismiss="row"><span aria-hidden="true">&times;</span</button>
+                              <button type="button" class="close" data-dismiss="row"><span aria-hidden="true">&times;</span></button>
                         </div>
                     </div>
                 </div>
@@ -146,16 +147,25 @@
                     
                 </div>
             </div>
+            <div class="row" style="margin-top: 30px;margin-bottom: 30px;">
+                <div class="col-md-9">
+                    <div class="end text-right pull-right">
+                        <a href="" class="btn btn-lg" style="color:white; background: red; border: 0;border-radius: unset;"><b>Continue</b></a>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    &nbsp;
+                </div>
+            </div>
         </div>
     </section>
     <div class="container">
-        <div class="end text-right">
-            <a href="" class="btn btn-lg" style="color:white; background: #c42424; border: 0"><b>Continue</b></a>
-        </div>
+        
     </div>
     
      <script src="jquery-3.1.1.js "></script>
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js "></script>
+            
 </body>
 
 </html>
