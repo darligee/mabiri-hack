@@ -11,16 +11,10 @@
     <link href="font-awesome-4.7.0/css/font-awesome.css" type="text/css" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
     <!--<link href="font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" type="text/css" rel="stylesheet">-->
-    <script >
-		$(document).ready(function(){
-		$('#firstCarousel, #secondCarousel, #thirdCarousel').carousel({
-		interval: 6000
-		});
-	});
-	</script>
+    
 </head>
 
-<body style="background: #fafafa">
+<body style="background: #fafafa; overflow-x: hidden">
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="navbar-header">
             <button class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapset">
@@ -34,8 +28,8 @@
         <div class="collapse navbar-collapse" id="navbar-collapset">
             <ul class="nav navbar-nav navbar-center" style="margin-left: 100px">
                 <li class="activate"><a class="scroll" href="#" style="color:#1f1f1f">Home</a></li>
-                <li><a class="scroll" href="#" style="color:#1f1f1f">NEAR YOU</a></li>
-                <li><a class="scroll" href="#" style="color:#1f1f1f">BIZ/SHOPS</a></li>
+                <li><a class="scroll" href="nearYou.html" style="color:#1f1f1f">NEAR YOU</a></li>
+                <li><a class="scroll" href="shops.html" style="color:#1f1f1f">BIZ/SHOPS</a></li>
                 <li><a class="scroll" href="#" style="color:#1f1f1f">DEALS</a></li>
                 <li><a class="scroll" href="#" style="color:#1f1f1f">ABOUT US</a></li>
                 <li><a class="scroll" href="#" style="color:#1f1f1f">CONTACT US</a></li>
@@ -50,7 +44,7 @@
         <div class="container">
             <ul class="list-inline fest">
                 <li style="background:#f0f0f0; height: 100%; padding:7px"><span class="fa fa-map-marker"></span>Set location to find deals nearby</li>
-                <li style=" padding:7px"><span class="fa fa-search"></span><i>Type what you are looking for here</i></li>
+                <li style=" padding:10px; border-color:#eee;"><span class="fa fa-search"></span><input type="text" placeholder="Type what you are looking for here" value="" ></input></li>
             </ul>
         </div>
     </section>
@@ -95,136 +89,197 @@
     </div>
     <section id="nearyou">
         <div id="firstCarousel" class="slide carousel" data-ride="carousel">
-                    <!-- Indicators -->
-                <ol class="carousel-indicators empty-crabtns" >
-                    <li data-target="#firstCarousel" data-slide-to="0" class="active"></li>
-                    <li data-target="#firstCarousel" data-slide-to="1"></li>
-                </ol>
+            <!-- Indicators -->
+            <ol class="carousel-indicators empty-crabtns">
+                <li data-target="#firstCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#firstCarousel" data-slide-to="1"></li>
+            </ol>
 
-                <!-- Wrapper for slides -->
-                <div class="carousel-inner" role="listbox">
-                    <div class="item active">
-                        <div class="row" style="padding-left: 10px">
-                <div class="col-md-3" style="background: white; padding: 10px; line-height: 5px;">
-                    <div class="text-center image">
-                        <img src="images/Axe-Spray-Transparent-Background.png" height="100" width="100">
-                    </div>
-                    <div class="info">
-                        <h4 style="font-weight: bolder"><b>Poflo Body Spray</b></h4>
-                        <b style="color: #6d6d6d">NAME OF SHOP TOWN</b>
-                        <h4 style="font-weight: bolder"><b>N3,000</b></h4><br>
-                        <b style="color: #6d6d6d">1min in walk</b>
-                    </div>
-                    <div class="text-right">
-                        <img src="mabiri-icon-pack/add-to-cart.svg" height="30" width="30"> 
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <div class="row" id="ra" style="padding-left: 10px">
+
                     </div>
                 </div>
-                <div class="col-md-3" style="background: white; padding: 10px; line-height: 5px;">
-                    <div class="text-center image">
-                        <img src="images/Dove_Men_Plus_Care_Body_and_Face_Wash_Clean_Comfort_250ml_FO_White_8717644627624-277129.png" height="100" width="100">
-                    </div>
-                    <div class="info">
-                        <h4 style="font-weight: bolder"><b>Poflo Body Spray</b></h4>
-                        <b style="color: #6d6d6d">NAME OF SHOP TOWN</b>
-                        <h4 style="font-weight: bolder"><b>N4,500</b></h4><br>
-                        <b style="color: #6d6d6d">5min in walk</b>
-                    </div>
-                    <div class="text-right">
-                        <img src="mabiri-icon-pack/add-to-cart.svg" height="30" width="30">
-                    </div>
-                </div>
-                <div class="col-md-3" style="background: white; padding: 10px; line-height: 5px;">
-                    <div class="text-center image">
-                        <img src="images/lantern-1219638_960_720.png" height="100" width="100">
-                    </div>
-                    <div class="info">
-                        <h4 style="font-weight: bolder"><b>Poflo Body Spray</b></h4>
-                        <b style="color: #6d6d6d">NAME OF SHOP TOWN</b>
-                        <h4 style="font-weight: bolder"><b>N11,000</b></h4><br>
-                        <b style="color: #6d6d6d">7min in walk</b>
-                    </div>
-                    <div class="text-right">
-                        <img src="mabiri-icon-pack/add-to-cart.svg" height="30" width="30">
-                    </div>
-                </div>
-                <div class="col-md-3" style="background: white; padding: 10px; line-height: 5px;">
-                    <div class="text-center image">
-                        <img src="images/clock_PNG6605.png" height="100" width="100">
-                    </div>
-                    <div class="info">
-                        <h4 style="font-weight: bolder"><b>Poflo Body Spray</b></h4>
-                        <b style="color: #6d6d6d">NAME OF SHOP TOWN</b>
-                        <h4 style="font-weight: bolder"><b>N25,000</b></h4><br>
-                        <b style="color: #6d6d6d">9min in walk</b>
-                    </div>
-                    <div class="text-right">
-                        <img src="mabiri-icon-pack/add-to-cart.svg" height="30" width="30">
-                    </div>
-                </div>
-            </div>
-                    </div>
-                    <div class="item">
-                        <div class="row" style="padding-left: 10px">
-                            <div class="col-md-3" style="background: white; padding: 10px; line-height: 5px;">
-                                <div class="text-center image">
-                                    <img src="images/Axe-Spray-Transparent-Background.png" height="100" width="100">
-                                </div>
-                                <div class="info">
-                                    <h4 style="font-weight: bolder"><b>Poflo Body Spray</b></h4>
-                                    <b style="color: #6d6d6d">NAME OF SHOP TOWN</b>
-                                    <h4 style="font-weight: bolder"><b>N3,000</b></h4><br>
-                                    <b style="color: #6d6d6d">1min in walk</b>
-                                </div>
-                                <div class="text-right">
-                                    <img src="mabiri-icon-pack/add-to-cart.svg" height="30" width="30"> 
-                                </div>
+                <div class="item">
+                    <div class="row" style="padding-left: 10px">
+                        <div class="col-md-3" style="background: white; padding: 10px; line-height: 5px;">
+                            <div class="text-center image">
+                                <img src="images/Axe-Spray-Transparent-Background.png" height="100" width="100">
                             </div>
-                            <div class="col-md-3" style="background: white; padding: 10px; line-height: 5px;">
-                                <div class="text-center image">
-                                    <img src="images/Dove_Men_Plus_Care_Body_and_Face_Wash_Clean_Comfort_250ml_FO_White_8717644627624-277129.png" height="100" width="100">
-                                </div>
-                                <div class="info">
-                                    <h4 style="font-weight: bolder"><b>Poflo Body Spray</b></h4>
-                                    <b style="color: #6d6d6d">NAME OF SHOP TOWN</b>
-                                    <h4 style="font-weight: bolder"><b>N4,500</b></h4><br>
-                                    <b style="color: #6d6d6d">5min in walk</b>
-                                </div>
-                                <div class="text-right">
-                                    <img src="mabiri-icon-pack/add-to-cart.svg" height="30" width="30">
-                                </div>
+                            <div class="info">
+                                <h4 style="font-weight: bolder"><b>Poflo Body Spray</b></h4>
+                                <b style="color: #6d6d6d">NAME OF SHOP TOWN</b>
+                                <h4 style="font-weight: bolder"><b>N3,000</b></h4><br>
+                                <b style="color: #6d6d6d">1min in walk</b>
                             </div>
-                            <div class="col-md-3" style="background: white; padding: 10px; line-height: 5px;">
-                                <div class="text-center image">
-                                    <img src="images/lantern-1219638_960_720.png" height="100" width="100">
-                                </div>
-                                <div class="info">
-                                    <h4 style="font-weight: bolder"><b>Poflo Body Spray</b></h4>
-                                    <b style="color: #6d6d6d">NAME OF SHOP TOWN</b>
-                                    <h4 style="font-weight: bolder"><b>N11,000</b></h4><br>
-                                    <b style="color: #6d6d6d">7min in walk</b>
-                                </div>
-                                <div class="text-right">
-                                    <img src="mabiri-icon-pack/add-to-cart.svg" height="30" width="30">
-                                </div>
+                            <div class="text-right">
+                                <img src="mabiri-icon-pack/add-to-cart.svg" height="30" width="30">
                             </div>
-                            <div class="col-md-3" style="background: white; padding: 10px; line-height: 5px;">
-                                <div class="text-center image">
-                                    <img src="images/clock_PNG6605.png" height="100" width="100">
-                                </div>
-                                <div class="info">
-                                    <h4 style="font-weight: bolder"><b>Poflo Body Spray</b></h4>
-                                    <b style="color: #6d6d6d">NAME OF SHOP TOWN</b>
-                                    <h4 style="font-weight: bolder"><b>N25,000</b></h4><br>
-                                    <b style="color: #6d6d6d">9min in walk</b>
-                                </div>
-                                <div class="text-right">
-                                    <img src="mabiri-icon-pack/add-to-cart.svg" height="30" width="30">
-                                </div>
+                        </div>
+                        <div class="col-md-3" style="background: white; padding: 10px; line-height: 5px;">
+                            <div class="text-center image">
+                                <img src="images/Dove_Men_Plus_Care_Body_and_Face_Wash_Clean_Comfort_250ml_FO_White_8717644627624-277129.png" height="100" width="100">
+                            </div>
+                            <div class="info">
+                                <h4 style="font-weight: bolder"><b>Poflo Body Spray</b></h4>
+                                <b style="color: #6d6d6d">NAME OF SHOP TOWN</b>
+                                <h4 style="font-weight: bolder"><b>N4,500</b></h4><br>
+                                <b style="color: #6d6d6d">5min in walk</b>
+                            </div>
+                            <div class="text-right">
+                                <img src="mabiri-icon-pack/add-to-cart.svg" height="30" width="30">
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="background: white; padding: 10px; line-height: 5px;">
+                            <div class="text-center image">
+                                <img src="images/lantern-1219638_960_720.png" height="100" width="100">
+                            </div>
+                            <div class="info">
+                                <h4 style="font-weight: bolder"><b>Poflo Body Spray</b></h4>
+                                <b style="color: #6d6d6d">NAME OF SHOP TOWN</b>
+                                <h4 style="font-weight: bolder"><b>N11,000</b></h4><br>
+                                <b style="color: #6d6d6d">7min in walk</b>
+                            </div>
+                            <div class="text-right">
+                                <img src="mabiri-icon-pack/add-to-cart.svg" height="30" width="30">
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="background: white; padding: 10px; line-height: 5px;">
+                            <div class="text-center image">
+                                <img src="images/clock_PNG6605.png" height="100" width="100">
+                            </div>
+                            <div class="info">
+                                <h4 style="font-weight: bolder"><b>Poflo Body Spray</b></h4>
+                                <b style="color: #6d6d6d">NAME OF SHOP TOWN</b>
+                                <h4 style="font-weight: bolder"><b>N25,000</b></h4><br>
+                                <b style="color: #6d6d6d">9min in walk</b>
+                            </div>
+                            <div class="text-right">
+                                <img src="mabiri-icon-pack/add-to-cart.svg" height="30" width="30">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-left: 10px">
+                        <div class="col-md-3" style="background: white; padding: 10px; line-height: 5px;">
+                            <div class="text-center image">
+                                <img src="images/Axe-Spray-Transparent-Background.png" height="100" width="100">
+                            </div>
+                            <div class="info">
+                                <h4 style="font-weight: bolder"><b>Poflo Body Spray</b></h4>
+                                <b style="color: #6d6d6d">NAME OF SHOP TOWN</b>
+                                <h4 style="font-weight: bolder"><b>N3,000</b></h4><br>
+                                <b style="color: #6d6d6d">1min in walk</b>
+                            </div>
+                            <div class="text-right">
+                                <img src="mabiri-icon-pack/add-to-cart.svg" height="30" width="30">
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="background: white; padding: 10px; line-height: 5px;">
+                            <div class="text-center image">
+                                <img src="images/Dove_Men_Plus_Care_Body_and_Face_Wash_Clean_Comfort_250ml_FO_White_8717644627624-277129.png" height="100" width="100">
+                            </div>
+                            <div class="info">
+                                <h4 style="font-weight: bolder"><b>Poflo Body Spray</b></h4>
+                                <b style="color: #6d6d6d">NAME OF SHOP TOWN</b>
+                                <h4 style="font-weight: bolder"><b>N4,500</b></h4><br>
+                                <b style="color: #6d6d6d">5min in walk</b>
+                            </div>
+                            <div class="text-right">
+                                <img src="mabiri-icon-pack/add-to-cart.svg" height="30" width="30">
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="background: white; padding: 10px; line-height: 5px;">
+                            <div class="text-center image">
+                                <img src="images/lantern-1219638_960_720.png" height="100" width="100">
+                            </div>
+                            <div class="info">
+                                <h4 style="font-weight: bolder"><b>Poflo Body Spray</b></h4>
+                                <b style="color: #6d6d6d">NAME OF SHOP TOWN</b>
+                                <h4 style="font-weight: bolder"><b>N11,000</b></h4><br>
+                                <b style="color: #6d6d6d">7min in walk</b>
+                            </div>
+                            <div class="text-right">
+                                <img src="mabiri-icon-pack/add-to-cart.svg" height="30" width="30">
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="background: white; padding: 10px; line-height: 5px;">
+                            <div class="text-center image">
+                                <img src="images/clock_PNG6605.png" height="100" width="100">
+                            </div>
+                            <div class="info">
+                                <h4 style="font-weight: bolder"><b>Poflo Body Spray</b></h4>
+                                <b style="color: #6d6d6d">NAME OF SHOP TOWN</b>
+                                <h4 style="font-weight: bolder"><b>N25,000</b></h4><br>
+                                <b style="color: #6d6d6d">9min in walk</b>
+                            </div>
+                            <div class="text-right">
+                                <img src="mabiri-icon-pack/add-to-cart.svg" height="30" width="30">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="padding-left: 10px">
+                        <div class="col-md-3" style="background: white; padding: 10px; line-height: 5px;">
+                            <div class="text-center image">
+                                <img src="images/Axe-Spray-Transparent-Background.png" height="100" width="100">
+                            </div>
+                            <div class="info">
+                                <h4 style="font-weight: bolder"><b>Poflo Body Spray</b></h4>
+                                <b style="color: #6d6d6d">NAME OF SHOP TOWN</b>
+                                <h4 style="font-weight: bolder"><b>N3,000</b></h4><br>
+                                <b style="color: #6d6d6d">1min in walk</b>
+                            </div>
+                            <div class="text-right">
+                                <img src="mabiri-icon-pack/add-to-cart.svg" height="30" width="30">
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="background: white; padding: 10px; line-height: 5px;">
+                            <div class="text-center image">
+                                <img src="images/Dove_Men_Plus_Care_Body_and_Face_Wash_Clean_Comfort_250ml_FO_White_8717644627624-277129.png" height="100" width="100">
+                            </div>
+                            <div class="info">
+                                <h4 style="font-weight: bolder"><b>Poflo Body Spray</b></h4>
+                                <b style="color: #6d6d6d">NAME OF SHOP TOWN</b>
+                                <h4 style="font-weight: bolder"><b>N4,500</b></h4><br>
+                                <b style="color: #6d6d6d">5min in walk</b>
+                            </div>
+                            <div class="text-right">
+                                <img src="mabiri-icon-pack/add-to-cart.svg" height="30" width="30">
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="background: white; padding: 10px; line-height: 5px;">
+                            <div class="text-center image">
+                                <img src="images/lantern-1219638_960_720.png" height="100" width="100">
+                            </div>
+                            <div class="info">
+                                <h4 style="font-weight: bolder"><b>Poflo Body Spray</b></h4>
+                                <b style="color: #6d6d6d">NAME OF SHOP TOWN</b>
+                                <h4 style="font-weight: bolder"><b>N11,000</b></h4><br>
+                                <b style="color: #6d6d6d">7min in walk</b>
+                            </div>
+                            <div class="text-right">
+                                <img src="mabiri-icon-pack/add-to-cart.svg" height="30" width="30">
+                            </div>
+                        </div>
+                        <div class="col-md-3" style="background: white; padding: 10px; line-height: 5px;">
+                            <div class="text-center image">
+                                <img src="images/clock_PNG6605.png" height="100" width="100">
+                            </div>
+                            <div class="info">
+                                <h4 style="font-weight: bolder"><b>Poflo Body Spray</b></h4>
+                                <b style="color: #6d6d6d">NAME OF SHOP TOWN</b>
+                                <h4 style="font-weight: bolder"><b>N25,000</b></h4><br>
+                                <b style="color: #6d6d6d">9min in walk</b>
+                            </div>
+                            <div class="text-right">
+                                <img src="mabiri-icon-pack/add-to-cart.svg" height="30" width="30">
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
     </section>
     <div class="container text-right" style="margin-top: 40px;">
         <ul class="list-inline" style=" margin-right: 40px">
@@ -236,7 +291,7 @@
             </li>
             <li>
                 <a class="right " href="#firstCarousel" data-slide="next">
-                  <img src="mabiri-icon-pack/arrow-circled-right.svg" height="30" width="30">  
+                    <img src="mabiri-icon-pack/arrow-circled-right.svg" height="30" width="30">
                 </a>
 
             </li>
@@ -246,8 +301,8 @@
         <div class="container" style="background:white; padding-bottom: 30px">
             <h2 style="color: red"><b>New Deals &nbsp; Hot Discounts</b></h2>
             <div id="secondCarousel" class="slide carousel" data-ride="carousel">
-                    <!-- Indicators -->
-                <ol class="carousel-indicators empty-crabtns" >
+                <!-- Indicators -->
+                <ol class="carousel-indicators empty-crabtns">
                     <li data-target="#secondCarousel" data-slide-to="0" class="active"></li>
                     <li data-target="#secondCarousel" data-slide-to="1"></li>
                 </ol>
@@ -370,22 +425,22 @@
                     </div>
                 </div>
             </div>
-                
+
             <div class="container text-right" style="margin-top: 40px">
                 <ul class="list-inline" style="margin-right: 40px">
                     <li>
                         <a class="left " href="#secondCarousel" data-slide="prev">
                             <img src="mabiri-icon-pack/arrow-circled-left.svg" height="30" width="30">
                         </a>
-                        
+
                     </li>
                     <li>
                         <a class="right " href="#secondCarousel" data-slide="next">
-                          <img src="mabiri-icon-pack/arrow-circled-right.svg" height="30" width="30">  
+                            <img src="mabiri-icon-pack/arrow-circled-right.svg" height="30" width="30">
                         </a>
-                        
+
                     </li>
-                 </ul>
+                </ul>
             </div>
             <div class="another" style="margin-top: 70px">
                 <div class="heading">
@@ -393,7 +448,7 @@
                 </div>
                 <div id="thirdCarousel" class="slide carousel" data-ride="carousel">
                     <!-- Indicators -->
-                    <ol class="carousel-indicators empty-crabtns" >
+                    <ol class="carousel-indicators empty-crabtns">
                         <li data-target="#thirdCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#thirdCarousel" data-slide-to="1"></li>
                     </ol>
@@ -526,15 +581,16 @@
                         </li>
                         <li>
                             <a class="right " href="#thirdCarousel" data-slide="next">
-                              <img src="mabiri-icon-pack/arrow-circled-right.svg" height="30" width="30">  
+                                <img src="mabiri-icon-pack/arrow-circled-right.svg" height="30" width="30">
                             </a>
 
                         </li>
-                     </ul>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
+    
     <section style="margin-top: -25px">
         <div class="container" style="background:white; padding: 30px">
             <div class="row">
@@ -558,13 +614,40 @@
                     </ul>
                 </div>
                 <div class="col-md-2 text-right">
-                    <img src="mabiri-icon-pack/arrow-up.svg" height="30" width="30">              
+                    <img src="mabiri-icon-pack/arrow-up.svg" height="30" width="30">
                 </div>
             </div>
         </div>
     </section>
     <script src="jquery-3.1.1.js "></script>
     <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js "></script>
+    <script>
+        $(document).ready(function() {
+            $('#firstCarousel, #secondCarousel, #thirdCarousel').carousel({
+                interval: 6000
+            });
+            $.ajax({
+                type: 'GET',
+                url: 'https://mabiri-new.appspot.com/_ah/api/mabiriApi/v1/getProducts?offset=1&productType=trending',
+                dataType: 'json',
+                contentType: 'application/json; charset=utf-8',
+                success: function(orders) {
+                    var limit = 10;
+                    var data = response.data.slice(0, limit);
+                    $.each(orders, function(i, data) { 
+                        for(let j = 0; j < 4; j++){
+                            $('#ra').append("<div class='col-md-3' style='background: white; padding: 10px; line-height: 5px;'><div class='text-center image'><img src=" + data[j].thumbnailImage +"><div><div class='info'><h4 style='font-weight:Bolder'><b>" + data[j].name +" </b></h4><b style='color: #6d6d6d'>" + data[j].storeId + "</b><h4 style='font-weight: bolder><b> N" + data[j].price+ "</b></h4><br><b style='color: #6d6d6d'>" +data[j].dealPrice+ "</b></div><div class='text-right'><img src='mabiri-icon-pack/add-to-cart.svg' height='30' width='30'></div></div>");
+                        }
+                    });
+                },
+                error: function() {
+                    alert('No bro');
+                }
+            });
+        });
+
+    </script>
 </body>
 
 </html>
+ 
