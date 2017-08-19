@@ -33,3 +33,14 @@
 .payInput{
     padding:7px 20px;
 }
+.addressDetails:hover{
+    border-color: red !important;
+    border-width: 2px !important;
+    font-weight: bolder !important;
+}
+.addressDetails address:hover{
+   color: red;
+}
+.addressDetails b:hover{
+   color: red;
+}
